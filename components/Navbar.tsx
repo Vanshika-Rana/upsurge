@@ -32,7 +32,7 @@ export default function Navbar() {
 					<a
 						href='#'
 						className='text-md text-gray-700 hover:text-black transition-all duration-200 transform hover:scale-95 cursor-pointer relative'>
-						Offer
+						Contact
 						<span className='absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-200 blur-sm rounded-lg'></span>
 					</a>
 				</div>
