@@ -1,13 +1,12 @@
 import React from "react";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
-import { FaDna, FaBrain, FaHeartbeat } from "react-icons/fa"; // Icons for each category
 import { GiDna2 } from "react-icons/gi";
 import { LuBrainCircuit } from "react-icons/lu";
 import { RiHeartPulseFill, RiSpaceShipFill } from "react-icons/ri";
 
 export default function Portfolio() {
 	return (
-		<section className='bg-[#F5FAFF] py-80 h-screen tracking-wide'>
+		<section className='bg-[#F5FAFF] pt-32 lg:pt-80 pb-16 h-auto tracking-wide'>
 			<div className=' py-16 px-6 md:px-12 lg:px-24'>
 				{/* Header Section */}
 				<div className='mb-12'>
@@ -21,16 +20,16 @@ export default function Portfolio() {
 						Directions We Are Working On
 					</h2>
 					<p className='text-lg font-body text-gray-700 mt-4 max-w-8xl'>
-						Upsurge Labs is proud to showcase a diverse range of
-						innovative projects and startups that we have nurtured,
-						our portfolio spans biotechnology, artificial
-						intelligence, and consumer health tech, highlighting our
-						commitment to fostering ground-breaking innovations.
+						Upsurge Labs is proud to showcase a diverse range of innovative
+						projects and startups that we have nurtured, our portfolio
+						spans biotechnology, artificial intelligence, and consumer
+						health tech, highlighting our commitment to fostering
+						ground-breaking innovations.
 					</p>
 				</div>
 
 				{/* Portfolio Categories */}
-				<div className='grid grid-cols-1 md:grid-cols-4 gap-12'>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
 					{/* Biotechnology */}
 					<div className='text-left'>
 						<GiDna2 className='text-blue-500 text-5xl mb-4 ' />

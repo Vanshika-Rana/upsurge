@@ -2,21 +2,21 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<footer className='bg-[#F5FAFF] text-[#1B274B] py-12 px-0 border-t-2 tracking-wide'>
-			<div className='max-w-full mx-24 grid grid-cols-1 md:grid-cols-2 gap-80'>
+		<footer className='bg-[#F5FAFF] text-[#1B274B] py-12 px-6 md:px-12 lg:px-24 border-t-2 tracking-wide'>
+			<div className='max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 lg:gap-80'>
 				{/* Left Section */}
-				<div>
+				<div className='mb-12 md:mb-0'>
 					<img
 						src='/upsurge-logo.png'
 						alt='Upsurge Labs Logo'
-						className='h-10 mb-6'
+						className='h-8 md:h-10 mb-6'
 					/>
-					<p className='text-md mb-6 font-body'>
+					<p className='text-sm md:text-md mb-6 font-body'>
 						Upsurge Labs is an innovation lab dedicated to advancing
 						technology in the realms of biotechnology, artificial
 						intelligence, and consumer health tech.
 					</p>
-					<div className='flex space-x-6 text-sm font-body font-semibold mb-6'>
+					<div className='flex flex-col lg:flex-row lg:flex-wrap lg:space-x-6 space-y-2 lg:space-y-0 text-sm font-body font-semibold mb-6'>
 						<a href='#' className='hover:text-blue-500'>
 							Who We Are
 						</a>
@@ -33,17 +33,17 @@ export default function Footer() {
 							Spacetech
 						</a>
 					</div>
-					<p className='text-sm text-gray-500 font-body'>
-						2024 © Upsurge Labs. All rights reserved
+					<p className='text-xs md:text-sm text-gray-500 font-body'>
+						2024 © Upsurge Labs. All rights reserved.
 					</p>
 				</div>
 
 				{/* Right Section */}
 				<div>
-					<h3 className='font-semibold text-lg mb-6 font-body'>
+					<h3 className='font-semibold text-md md:text-lg mb-4 md:mb-6 font-body'>
 						Contact Information
 					</h3>
-					<p className='text-md mb-6 font-body'>
+					<p className='text-sm md:text-md mb-6 font-body'>
 						We&apos;d love to hear from you! Whether you’re an
 						entrepreneur with a ground-breaking idea, an investor
 						looking for the next big thing, or simply interested in
