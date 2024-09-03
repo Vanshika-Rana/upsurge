@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Raleway, Merriweather_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Tinos } from "next/font/google";
 
-const raleway = Raleway({
-	variable: "--display-font",
-	subsets: ["latin"],
+const ibm = IBM_Plex_Sans({
+  variable: "--body-font",
+  subsets: ["cyrillic"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
-const merriweather = Merriweather_Sans({
-	variable: "--body-font",
+
+const tinos = Tinos({
+	variable: "--display-font",
 	subsets: ["latin"],
+  weight: [ "400",  "700"],
 });
 import "./globals.css";
 
@@ -25,7 +28,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${raleway.variable} ${merriweather.variable}`}>
+			<body className={`${ibm.variable} ${tinos.variable}`}>
 				{children}
 			</body>
 		</html>

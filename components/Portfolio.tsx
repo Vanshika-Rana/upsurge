@@ -1,87 +1,85 @@
 import React from "react";
-import { FaDna, FaRobot, FaHeartbeat } from "react-icons/fa";
+import { TbArrowBadgeRightFilled } from "react-icons/tb";
+import { FaDna, FaBrain, FaHeartbeat } from "react-icons/fa"; // Icons for each category
+import { GiDna2 } from "react-icons/gi";
+import { LuBrainCircuit } from "react-icons/lu";
+import { RiHeartPulseFill, RiSpaceShipFill } from "react-icons/ri";
 
 export default function Portfolio() {
 	return (
-		<section className='py-16'>
-			<div className='max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
-				{/* Section Header */}
-				<div className='text-center mb-12'>
-					<h2 className='text-4xl font-extrabold text-gray-900'>
-						Our Portfolio
+		<section className='bg-[#F5FAFF] py-80 h-screen tracking-wide'>
+			<div className=' py-16 px-6 md:px-12 lg:px-24'>
+				{/* Header Section */}
+				<div className='mb-12'>
+					<p className='text-md tracking-wide font-body text-blue-500 font-semibold mb-4 flex '>
+						<span className='inline-block transform text-blue-500 mr-2'>
+							<TbArrowBadgeRightFilled />
+						</span>
+						PORTFOLIO
+					</p>
+					<h2 className='font-display text-4xl md:text-5xl font-normal leading-tight'>
+						Directions We Are Working On
 					</h2>
-					<p className='mt-4 text-lg text-gray-500 max-w-2xl mx-auto'>
+					<p className='text-lg font-body text-gray-700 mt-4 max-w-8xl'>
 						Upsurge Labs is proud to showcase a diverse range of
-						innovative projects and startups that we have nurtured
-						and supported. Our portfolio spans biotechnology,
-						artificial intelligence, and consumer health tech,
-						highlighting our commitment to fostering groundbreaking
-						innovations.
+						innovative projects and startups that we have nurtured,
+						our portfolio spans biotechnology, artificial
+						intelligence, and consumer health tech, highlighting our
+						commitment to fostering ground-breaking innovations.
 					</p>
 				</div>
 
-				{/* Timeline Container */}
-				<div className='relative'>
-					{/* Vertical Line */}
-					<div className='absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-900'></div>
-
-					{/* Timeline Item 1 */}
-					<div className='mb-12 flex flex-col md:flex-row items-center w-full'>
-						<div className='md:w-1/2 flex justify-end md:pr-8 mb-4 md:mb-0'>
-							<div className='bg-gray-100 border-black border-2 bg-opacity-90 backdrop-blur-lg p-8 rounded-lg shadow-xl w-full'>
-								<h3 className='text-xl font-semibold text-black mb-4'>
-									Biotechnology
-								</h3>
-								<p className='text-gray-700'>
-									Leveraging AI-Driven Processes to
-									Revolutionize Biotech Research, Reducing
-									Timelines from Years to Months.
-								</p>
-							</div>
-						</div>
-						<div className='relative z-10 mb-4 md:mb-0 hidden md:block'>
-							<FaDna className='text-white bg-gray-800 p-2 rounded-full shadow-md border-2 border-white h-12 w-12' />
-						</div>
-						<div className='md:w-1/2'></div>
+				{/* Portfolio Categories */}
+				<div className='grid grid-cols-1 md:grid-cols-4 gap-12'>
+					{/* Biotechnology */}
+					<div className='text-left'>
+						<GiDna2 className='text-blue-500 text-5xl mb-4 ' />
+						<h3 className='font-body text-2xl font-semibold text-[#1B274B] mb-2'>
+							Biotechnology
+						</h3>
+						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
+						<p className='text-gray-600'>
+							Leveraging AI Processes to Revolutionize Biotech
+							Research, Reducing Timelines.
+						</p>
 					</div>
 
-					{/* Timeline Item 2 */}
-					<div className='mb-12 flex flex-col md:flex-row-reverse items-center w-full'>
-						<div className='md:w-1/2 flex justify-start md:pl-8 mb-4 md:mb-0'>
-							<div className='bg-gray-100 border-black border-2 bg-opacity-90 backdrop-blur-lg p-8 rounded-lg shadow-xl w-full'>
-								<h3 className='text-xl font-semibold text-black mb-4'>
-									Artificial Intelligence
-								</h3>
-								<p className='text-gray-700'>
-									Building an ever-evolving automation
-									platform powered by AI to execute daily
-									tasks.
-								</p>
-							</div>
-						</div>
-						<div className='relative z-10 mb-4 md:mb-0 hidden md:block'>
-							<FaRobot className='text-white bg-gray-800 p-2 rounded-full shadow-md border-2 border-white h-12 w-12' />
-						</div>
-						<div className='md:w-1/2'></div>
+					{/* Artificial Intelligence */}
+					<div className='text-left'>
+						<LuBrainCircuit className='text-blue-500 text-5xl mb-4 ' />
+						<h3 className='font-display text-2xl font-semibold text-[#1B274B] mb-2'>
+							Artificial Intelligence
+						</h3>
+						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
+						<p className='text-gray-600'>
+							Building an ever-evolving automation platform
+							powered by AI to execute daily tasks.
+						</p>
 					</div>
 
-					{/* Timeline Item 3 */}
-					<div className='mb-12 flex flex-col md:flex-row items-center w-full'>
-						<div className='md:w-1/2 flex justify-end md:pr-8 mb-4 md:mb-0'>
-							<div className='bg-gray-100 border-black border-2 bg-opacity-90 backdrop-blur-lg p-8 rounded-lg shadow-xl w-full'>
-								<h3 className='text-xl font-semibold text-black mb-4'>
-									HealthTech Solutions
-								</h3>
-								<p className='text-gray-700'>
-									Developing wearable devices that monitor and
-									improve health outcomes.
-								</p>
-							</div>
-						</div>
-						<div className='relative z-10 mb-4 md:mb-0 hidden md:block'>
-							<FaHeartbeat className='text-white bg-gray-800 p-2 rounded-full shadow-md border-2 border-white h-12 w-12' />
-						</div>
-						<div className='md:w-1/2'></div>
+					{/* HealthTech Solutions */}
+					<div className='text-left'>
+						<RiHeartPulseFill className='text-blue-500 text-5xl mb-4' />
+						<h3 className='font-display text-2xl font-semibold text-[#1B274B] mb-2'>
+							HealthTech Solutions
+						</h3>
+						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
+						<p className='text-gray-600'>
+							Developing wearable devices that monitor and improve
+							health outcomes.
+						</p>
+					</div>
+					{/* Space Solutions */}
+					<div className='text-left'>
+						<RiSpaceShipFill className='text-blue-500 text-5xl mb-4' />
+						<h3 className='font-display text-2xl font-semibold text-[#1B274B] mb-2'>
+							Spacetech Solutions
+						</h3>
+						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
+						<p className='text-gray-600'>
+							Developing wearable devices that monitor and improve
+							health outcomes.
+						</p>
 					</div>
 				</div>
 			</div>

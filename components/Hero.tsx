@@ -1,27 +1,28 @@
 import React from "react";
-import Navbar from "./Navbar";
 
 export default function HeroSection() {
 	return (
-		<section className='h-[60vh] flex flex-col items-center justify-center bg-cover bg-center text-black text-center px-4 sm:px-6 lg:px-8'>
-			<div className='max-w-3xl mx-auto'>
-				<p className='font-body text-sm sm:text-md font-bold mb-4 text-black border border-black bg-black rounded-full px-6 py-2 inline-flex items-center bg-opacity-10'>
-					Welcome to Upsurge Labs!
-				</p>
-				<h1 className='font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-black'>
-					Innovating Tomorrow!
+		<div className="bg-[url('/herobg.png')] bg-cover bg-center h-[90vh] flex items-center justify-center ">
+			<div className='text-center px-6 md:px-12 lg:px-24'>
+				<div className='text-md font-bold text-blue-600 uppercase mb-4  font-body'>
+					Welcome to Upsurge Labs
+				</div>
+				<h1 className='text-4xl md:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight mb-6 font-display'>
+					Biotechnology, artificial intelligence,
+					<br />
+					and consumer health tech
 				</h1>
-				<p className='font-body text-sm sm:text-md lg:text-md font-normal mb-8 leading-relaxed text-gray-700'>
+				<p className='text-md md:text-lg lg:text-lg text-gray-700 max-w-6xl mx-auto mb-8 font-body'>
 					At Upsurge Labs, we drive innovation in biotech, AI, and
 					consumer health tech. With the backing of Instadapp, our
-					mission is to transform groundbreaking ideas into tangible
+					mission is to transform ground-breaking ideas into tangible
 					solutions. Join us to revolutionize the way we live and
 					interact with technology.
 				</p>
-				<button className='bg-gradient-to-r from-gray-500 to-gray-900 py-3 px-8 rounded-full text-lg font-semibold text-white shadow-lg hover:scale-95 transition-transform duration-300 ease-in-out'>
-					Join Us Today!
+				<button className='bg-blue-600 text-white py-3 px-8 rounded-lg text-md md:text-lg font-semibold transition duration-200 ease-in-out hover:scale-95 font-body'>
+					Contact Us
 				</button>
 			</div>
-		</section>
+		</div>
 	);
 }
