@@ -12,12 +12,12 @@ export default function Footer() {
 						className='h-8 md:h-10 mb-6'
 					/>
 					<p className='text-sm md:text-md mb-6 font-body'>
-						Upsurge Labs is an innovation lab dedicated to advancing
-						technology in the realms of biotechnology, artificial
-						intelligence, and consumer health tech.
+						Upsurge Labs is an innovation powerhouse, committed to
+						advancing the frontiers of biotechnology, artificial
+						intelligence, spacetech, and health tech.
 					</p>
 					<div className='flex flex-col lg:flex-row lg:flex-wrap lg:space-x-6 space-y-2 lg:space-y-0 text-sm font-body font-semibold mb-6'>
-						<a href='#' className='hover:text-blue-500'>
+						<a href='#about' className='hover:text-blue-500'>
 							Who We Are
 						</a>
 						<a href='#' className='hover:text-blue-500'>

@@ -10,7 +10,7 @@ export default function Services() {
 					<span className='inline-block transform text-blue-500 mr-2'>
 						<TbArrowBadgeRightFilled />
 					</span>
-					SERVICES
+					Projects
 				</p>
 				<h2 className='font-display text-3xl md:text-4xl lg:text-5xl font-normal leading-tight'>
 					Diverse Range Of Innovative Projects

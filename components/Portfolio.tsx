@@ -6,7 +6,7 @@ import { RiHeartPulseFill, RiSpaceShipFill } from "react-icons/ri";
 
 export default function Portfolio() {
 	return (
-		<section className='bg-[#F5FAFF] pt-32 lg:pt-80 pb-16 h-auto tracking-wide'>
+		<section id="portfolio" className='bg-[#F5FAFF] pt-32 lg:pt-80 pb-16 h-auto tracking-wide'>
 			<div className=' py-16 px-6 md:px-12 lg:px-24'>
 				{/* Header Section */}
 				<div className='mb-12'>
@@ -20,11 +20,11 @@ export default function Portfolio() {
 						Directions We Are Working On
 					</h2>
 					<p className='text-lg font-body text-gray-700 mt-4 max-w-8xl'>
-						Upsurge Labs is proud to showcase a diverse range of innovative
-						projects and startups that we have nurtured, our portfolio
-						spans biotechnology, artificial intelligence, and consumer
+						Upsurge Labs is proud to showcase a diverse range of
+						innovative projects and startups. Our portfolio spans
+						biotechnology, artificial intelligence, spacetech, and
 						health tech, highlighting our commitment to fostering
-						ground-breaking innovations.
+						groundbreaking innovations.
 					</p>
 				</div>
 
@@ -38,8 +38,10 @@ export default function Portfolio() {
 						</h3>
 						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
 						<p className='text-gray-600'>
-							Leveraging AI Processes to Revolutionize Biotech
-							Research, Reducing Timelines.
+							Harnessing the power of AI to revolutionize biotech
+							research, we focus on significantly reducing
+							research timelines, enabling faster breakthroughs
+							and more efficient discoveries.
 						</p>
 					</div>
 
@@ -51,8 +53,10 @@ export default function Portfolio() {
 						</h3>
 						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
 						<p className='text-gray-600'>
-							Building an ever-evolving automation platform
-							powered by AI to execute daily tasks.
+							Developing a dynamic AI-powered automation platform
+							that continually evolves, designed to enhance
+							productivity and streamline complex tasks across
+							various industries.
 						</p>
 					</div>
 
@@ -64,8 +68,10 @@ export default function Portfolio() {
 						</h3>
 						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
 						<p className='text-gray-600'>
-							Developing wearable devices that monitor and improve
-							health outcomes.
+							Creating advanced wearable devices that not only
+							monitor health but also actively contribute to
+							improving and personalizing health outcomes for
+							individuals.
 						</p>
 					</div>
 					{/* Space Solutions */}
@@ -76,8 +82,10 @@ export default function Portfolio() {
 						</h3>
 						<div className='border-b-2 border-blue-500  mx-auto mb-4'></div>
 						<p className='text-gray-600'>
-							Developing wearable devices that monitor and improve
-							health outcomes.
+							Pioneering technologies in spacetech, from
+							developing innovative satellite systems to advancing
+							exploration tools that push the boundaries of
+							what&apos;s possible in space.
 						</p>
 					</div>
 				</div>
